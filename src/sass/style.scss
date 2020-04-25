@@ -1,0 +1,80 @@
+/**! 
+	Tema Include para WebTVs e WevRádios.
+*/
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@import 'variables';
+@import 'header';
+@import 'index';
+@import 'internal';
+@import 'footer';
+::-webkit-scrollbar {
+	width: 0.5em;
+	height: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+	background: $theme-color-primary;
+}
+::-webkit-scrollbar-track {
+	background: #dedede;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	a {
+		color: #000;
+		&:hover {
+			color: #000;
+			text-decoration: underline #000;
+		}
+		.card {
+			border: none;
+			border-radius: 4px;
+			overflow: hidden;
+			img {
+				height: 100%;
+				object-fit: cover;
+				border-radius: 4px;
+				transition: all 0.4s;
+			}
+			.card-img-overlay {
+				top: unset;
+				padding: 10px;
+				background-color: rgba($color: $theme-color-primary, $alpha: 0.6);
+				border-radius: 4px;
+				color: #fff;
+				.card-title {
+					margin: 0;
+					font: bold 18px 'Roboto', sans-serif;
+				}
+				.card-text {
+					margin-top: 10px;
+					font: 15px 'Roboto', sans-serif;
+				}
+			}
+			&:hover {
+				img {
+					transform: scale(1.2);
+				}
+				.card-img-overlay .card-title {
+					text-decoration: underline $theme-background;
+				}
+			}
+		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	ul {
+		list-style: none;
+	}
+}
+audio::-webkit-media-controls-timeline {
+	display: none;
+}
