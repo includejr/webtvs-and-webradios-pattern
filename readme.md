@@ -26,17 +26,15 @@ Obs.: é extremamente necessário ter o [Node.js](https://nodejs.org/en/) instal
 
 ## Usando o Gulp
 
-O Gulp já está configurado, então não é necessário nenhuma alteração exceto se você quiser ou precisar. Caso queria aprender mais sobre o Gulp veja sua [documentação](https://gulpjs.com/docs/en/api/concepts).
+O Gulp já está configurado, então não é necessário nenhuma alteração exceto se você quiser ou precisar. Caso queira aprender mais sobre o Gulp veja sua [documentação](https://gulpjs.com/docs/en/api/concepts).
 
 Tasks públicas:
 
-- Dev
-  Faz o build do CSS e JS com seus respectivos sourcemaps e fica procurado por alterações nas sources (os arquivos dentro da pasta src)
+- Dev: faz o build do CSS e JS com seus respectivos sourcemaps e fica procurado por alterações nas sources (os arquivos dentro da pasta src)
   ```
   gulp dev
   ```
-- Build
-  Faz o build do CSS e JS sem os sourcemaps e não fica buscando por alterações nas sources
+- Build: faz o build do CSS e JS sem os sourcemaps e não fica buscando por alterações nas sources
   ```
   gulp build
   ```
